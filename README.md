@@ -14,7 +14,7 @@ Ensure you have **Docker** and **Docker Compose** installed.
 
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/Spr1zze/EduFlow/tree/main
 cd your-repo 
 ```
 
