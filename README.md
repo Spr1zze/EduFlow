@@ -20,7 +20,7 @@ cd your-repo
 
 ### **Run the docker container**
 ```sh
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 ### **Stop the docker container**
@@ -34,6 +34,4 @@ docker-compose down -v
 
 
 ### **Access the project**
-phpMyAdmin: http://localhost:8080
-Backend (PHP + Apache): http://localhost:8000
-Frontend (if used): http://localhost:3000
+localhost:8080/xxx
