@@ -1,71 +1,108 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(244, 242, 251);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100px;
-    font-size: 30px;
-}
-
-#barcode-btn {
-    height: 50px;
-    width: 100px;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    font-size: 15px;
-}
-
-
-#room_ui {
-    max-width: 70%;
-    margin: 0px 0px 0px 15%;
-}
-
-#rooms {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-}
-
-/* Making standard multiple use box */
-#rooms > div {
-    width: 200px; 
-    height: 200px;
-    background-color: #a9b5df;
-    color: black; /* text color */
-    border: 2px solid black;
-    border-radius: 50%;
-    justify-content: center; 
-    align-items: center;
-    margin: 20px; 
-    text-align: center;
-    font-size: 50px;
-    padding: 50px 0 0 0;
-}   
-
-button {
-    width: 100px;
-    height: 100px;
-    background-color: #7886c7;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    border-radius: 15%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background: whitesmoke; 
-}
+html{
+    background-color: rgb(243, 244, 246);
+    height: 0;
+    }
+    .header{
+        background-color:rgb(147, 197, 253);
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    
+    #sidebar{
+        position:absolute;
+        width: 255px;  
+        top: -5%;
+        left: 0;
+        height: 642px;
+    }
+    #sidebar ul{
+        list-style-type: none;
+        background-color:rgb(59, 130, 246);
+        overflow: hidden;
+        height: 742px;
+        font-size: x-large;
+        text-align: center;
+        padding: 0px;
+    }
+    #sidebar a{
+        text-decoration: none;
+        color: black;
+      }
+    
+    .logoutButton{
+        position: relative;
+        top: 25%;
+        border-radius: 7px;
+        width: 206px;
+        padding: 1px;
+        height: 38px;
+    }
+    .logoutButton:hover{
+        background-color: lightgray;
+    }
+    #logoutIcon{
+        width: 16px;
+        position:absolute;
+        left: 30%;
+    }
+    #sidebar li:hover{
+        background-color: white;
+        border: 2px white;
+        border-radius: 7px;
+    }
+    #sidebar li{
+        background-color: rgb(37, 99, 235);
+        border: 2px rgb(37, 99, 235);
+        border-radius: 7px;
+        margin: 10px;
+        padding: 3px;
+        font: bold;
+    }
+    #box{
+        position:absolute;
+        top: 15%;
+        left: 7%;
+        width: 85%;
+        height: 560px;
+        background-color: white;
+        box-shadow: 5px 10px 5px #888888;
+        z-index: -1;
+    }
+    #open_sidebar_button{
+        position: relative;
+        left: 0;
+        top:-81px;
+        width: 40px;
+        height: 40px;
+    }
+    #close_sidebar_button{
+        position: relative;
+        top:6px;
+        width: 40px;
+        height: 40px;
+        left:-110px;
+    }
+    h1{
+        text-align: center;
+    }
+    #board{
+        position: absolute;
+        
+    }
+    td{
+        border: 1px solid rgb(37, 99, 235);
+        padding: 2px;
+        text-align: center;
+        border-radius: 6px;
+    }
+    th{
+        border: 1px solid rgb(37, 99, 235);
+        text-align: center;
+        padding: 2px;
+        border-radius: 6px;
+    }
+    
+    

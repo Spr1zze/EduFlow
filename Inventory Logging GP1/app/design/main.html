@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>EduFlow</title>
-</head>
-<body id="full_body">
+<html>  
+    <head>  
+        <title>test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header"> <h1>EduFlow</h1>
+            <button id="open_sidebar_button" onclick="sidebar_open()">|||</button>
+        </header>
+        
+        <div id="sidebar" style="display:none;">
+            <ul> 
+                <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
+                <h4>EduFlow</h4> 
+                <h4>Links</h4>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Lager</a></li>
+                <li><a href="">Reporter</a></li>
+                <h4>Admin</h4>
+                <li><a href="">Student onboarding</a></li>
+                <li><a href="">Barcode generator</a></li>
+                <button class="logoutButton">
+                    <img src="pictures/logout.webp" id="logoutIcon" alt="logout">Log af
+                </button>
+            </ul>
+        </div>
 
-    <header><span>EduFlow: Logging your belongings</span></header>
-    
-    <script src="../scripts/index.js"></script>
-</body>
+        <main>
+            <div id="box"></div>
+        </main>
+
+        <footer></footer>
+
+        <script>
+            function sidebar_open() {
+                document.getElementById("sidebar").style.display = "block";
+            }
+            function sidebar_close() {
+                document.getElementById("sidebar").style.display = "none";
+            }
+        </script>
+    </body>
 </html>
