@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyles.css">
+
+    <!-- This is the EduFlow font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+
+    <!-- Code39 needs to be added elsewhere, in the barcode site. -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/barcodes/JsBarcode.code39.min.js"></script>
+    
+    <title>EduFlow</title>
+</head>
+<body>
+    
+    <header id="header"> <h1>Welcome to EduFlow</h1>
+        <button id="login-btn" onclick="openPopupLogin()"><h2>Login</h2></button>
+        
+        <!-- Popup Container for barcode -->
+        <div class="popup-overlay-login" id="popup-login">
+            <div class="popup-login">
+                <button class="close-btn" onclick="closePopupLogin()">X</button>
+                <h2>Login</h2>
+                <p>Insert your credentials below</p>
+                <div id="login-input-container">
+                    <label>Username: </label>
+                    <input type="text" name="username" placeholder="Write here">
+                    <label>Password: </label>
+                    <input type="text" name="password" placeholder="Write here">
+                </div>  
+                <button id="login-to-frontpage" onclick="loginToMain()">Accept</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-ui">
+        <div id="main-pic">
+            <img id="pic-sizing" src="https://blog.planbook.com/wp-content/uploads/2022/12/image2-2-1024x576.jpg" alt="didnt load pic">
+        </div>
+        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

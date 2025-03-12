@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyles.css">
+
+    <!-- This is the EduFlow font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    
+
+    <title>EduFlow</title>
+</head>
+<body>
+    <header class="header"> <h1>EduFlow</h1>
+        <button id="open_sidebar_button" onclick="sidebar_open()">|||</button>
+    </header>
+    
+    <div id="sidebar" style="display:none;">
+        <ul> 
+            <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
+            <h4>EduFlow</h4> 
+            <h4>Links</h4>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Lager</a></li>
+            <li><a href="">Reporter</a></li>
+            <h4>Admin</h4>
+            <li><a href="">Student onboarding</a></li>
+            <li><a href="">Barcode generator</a></li>
+            <button class="logoutButton"><h2>Log af</h2>
+            </button>
+        </ul>
+    </div>
+
+    <main>
+        <div id="box"></div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        function sidebar_open() {
+            document.getElementById("sidebar").style.display = "block";
+        }
+        function sidebar_close() {
+            document.getElementById("sidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>

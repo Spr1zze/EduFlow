@@ -1,0 +1,132 @@
+/* joachim kode */
+
+* {
+    background-color: rgb(243, 244, 246);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+#header {
+    background-color:rgb(147, 197, 253);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    h1 {
+        background-color:rgb(147, 197, 253);
+        text-align: center;
+    }
+    #login-btn {
+        position: relative;
+        right: -1425px;
+        top: -40px;
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    #login-btn:hover {
+        background-color: red;
+        border-radius: 10px;
+    }
+}
+
+#main-ui {
+    height: 695px;
+    width: 1536px;
+}
+#main-ui {
+    margin: 0px; 
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#pic-sizing {
+    height: 50%;
+    width: 80%;
+}
+
+
+
+/* tester login pop up */
+/* Overlay background */
+.popup-overlay-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup box */
+.popup-login {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}   
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+}
+.close-btn:hover {
+    background: darkred;
+}
+
+/* Show popup */
+.popup-overlay-login.active {
+    display: flex;
+}
+
+#login-input-container {
+    padding: 25px 0px 11px 0px;
+    background-color: white;
+    label {
+        background-color: white;
+    }
+}
+
+/* Accept btn changes */
+#login-to-frontpage {
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 25px;
+    background-color: lightgreen;
+}
+#login-to-frontpage:hover {
+    background-color: green;
+    color: white;
+}
+
+/* temp solutions */
+h2 {
+    background-color: white;
+}
+p {
+    background-color: white;
+}

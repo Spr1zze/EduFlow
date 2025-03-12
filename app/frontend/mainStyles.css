@@ -1,3 +1,11 @@
+/* sergey kode */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Big Shoulders", sans-serif;
+}
 html{
     background-color: rgb(243, 244, 246);
     height: 0;
@@ -9,6 +17,7 @@ html{
         top: 0;
         left: 0;
         position: absolute;
+        padding: 10px;
     }
     
     #sidebar{
@@ -74,16 +83,16 @@ html{
     #open_sidebar_button{
         position: relative;
         left: 0;
-        top:-81px;
+        top: -40px;
         width: 40px;
         height: 40px;
     }
     #close_sidebar_button{
         position: relative;
-        top:6px;
+        left: -97px;
+        top: 43px;
         width: 40px;
         height: 40px;
-        left:-110px;
     }
     h1{
         text-align: center;
@@ -103,6 +112,4 @@ html{
         text-align: center;
         padding: 2px;
         border-radius: 6px;
-    }
-    
-    
+    }    
