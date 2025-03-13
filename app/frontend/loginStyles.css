@@ -35,24 +35,19 @@
 }
 
 #main-ui {
-    height: 695px;
-    width: 1536px;
+    width: 100vw;
+    height: 99.5vh;
 }
-#main-ui {
-    margin: 0px; 
+#main-pic {
     height: 100%;
     width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 #pic-sizing {
-    height: 50%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 
 
-
-/* tester login pop up */
 /* Overlay background */
 .popup-overlay-login {
     position: fixed;
@@ -110,7 +105,7 @@
     }
 }
 
-/* Accept btn changes */
+/* Accept btn */
 #login-to-frontpage {
     width: 70px;
     height: 40px;
