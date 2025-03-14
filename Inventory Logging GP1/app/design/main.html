@@ -14,7 +14,7 @@
                 <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
                 <h4>EduFlow</h4> 
                 <h4>Links</h4>
-                <li><a href="">Dashboard</a></li>
+                <li><a href="#"onclick="table_open()">Kanban</a></li>
                 <li><a href="">Lager</a></li>
                 <li><a href="">Reporter</a></li>
                 <h4>Admin</h4>
@@ -27,7 +27,161 @@
         </div>
 
         <main>
-            <div id="box"></div>
+            <div id="box">
+                <container id="board">
+                    <table id="table" width="1310px">
+                        <tr>
+                            <th id="daglige">Daglige opgaver</th>
+                            <th id="ugentlige">Ugentlige opgaver</th>
+                            <th id="igangværende">Igangværende opgaver</th>
+                            <th id="færdige">Færdige opgaver</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mixing
+                             <div id="button_container">
+                                <button>Slet</button>
+                                <button>Færdig</button>
+                                <button>Igang</button>
+                            </div>
+                            <textarea></textarea>
+                            </td>
+
+                            <td>Grinding
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                        </tr>
+
+                        <tr>
+                            <td>Baking
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Cooling
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                        </tr>
+
+                        <tr>
+                            <td>Baking
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Cooling
+                                <div id="button_container">
+                                    <button class="col2">Slet</button>
+                                    <button class="col2">Færdig</button>
+                                    <button class="col2">1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button class="col3">Slet</button>
+                                    <button class="col3">Færdig</button>
+                                    <button class="col3">1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                        </tr>
+
+                        <tr>
+                            <td>Mixing
+                             <div id="button_container">
+                                <button>Slet</button>
+                                <button>Færdig</button>
+                                <button>1234</button>
+                            </div>
+                            <textarea></textarea>
+                            </td>
+
+                            <td>Grinding
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td>
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                            <td>Fermentation
+                                <div id="button_container">
+                                    <button>Slet</button>
+                                    <button>Færdig</button>
+                                    <button>1234</button>
+                                </div>
+                                <textarea></textarea>
+                            </td> 
+                        </tr>
+
+                    </table>
+                </container>
+            </div>
         </main>
 
         <footer></footer>
@@ -38,6 +192,9 @@
             }
             function sidebar_close() {
                 document.getElementById("sidebar").style.display = "none";
+            }
+            function table_open(){
+                document.getElementById("table").style.display = "block";
             }
         </script>
     </body>
