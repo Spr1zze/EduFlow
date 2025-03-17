@@ -163,4 +163,13 @@ html{
     .col3{
         background-color: limegreen;
     }
-    
+    #add_task_button_daily, #add_task_button_weekly{
+        text-decoration: none;
+        float: right;
+        padding-right: 15px;
+        color: white;
+        width: 10vh;
+    }
+    #add_task_button_daily:hover, #add_task_button_weekly:hover{
+        color: black;
+    }
