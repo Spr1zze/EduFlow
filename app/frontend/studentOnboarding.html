@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="studentOnboarding.css">
+
+    <!-- This is the EduFlow font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    
+
+    <title>EduFlow</title>
+</head>
+<body>
+    <header class="header"> <h1>EduFlow Onboard</h1>
+        <button id="open_sidebar_button" onclick="sidebar_open()">|||</button>
+    </header>
+    
+    <div id="sidebar" style="display:none;">
+        <ul> 
+            <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
+            <h4>EduFlow</h4> 
+            <h4>Links</h4>
+            <li><a href="kanban.html">Kanban</a></li>
+            <li><a href="lager.html">Lager</a></li>
+            <li><a href="batchReport.html">Reporter</a></li>
+            <h4>Admin</h4>
+            <li><a href="studentOnboarding.html">Student onboarding</a></li>
+            <li><a href="barcodeGenerator.html">Barcode generator</a></li>
+            <button class="logoutButton" onclick="backToLogin()"><h2>Log af</h2>
+            </button>
+        </ul>
+    </div>
+
+    <main id="main-size">
+        <div id="box"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
