@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="batchReportStyles.css">
+    <link rel="stylesheet" href="studentOnboarding.css">
 
     <!-- This is the EduFlow font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
     <title>EduFlow</title>
 </head>
 <body>
-    <header class="header"> <h1>EduFlow Batch</h1>
+    <header class="header"> <h1>EduFlow Onboard</h1>
         <button id="open_sidebar_button" onclick="sidebar_open()">|||</button>
     </header>
     
@@ -23,30 +23,22 @@
             <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
             <h4>EduFlow</h4> 
             <h4>Links</h4>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Lager</a></li>
-            <li><a href="">Reporter</a></li>
+            <li><a href="../kanban/kanban.html">Kanban</a></li>
+            <li><a href="../inventory/lager.html">Lager</a></li>
+            <li><a href="../batch-report/batchReport.html">Reporter</a></li>
             <h4>Admin</h4>
-            <li><a href="studentOnboarding.html">Student onboarding</a></li>
-            <li><a href="barcodeGenerator.html">Barcode generator</a></li>
-            <button class="logoutButton" onclick="backToLogin()"><h2>Log af</h2>
-            </button>
+            <li><a href="../student-onboarding/studentOnboarding.html">Student onboarding</a></li>
+            <li><a href="../barcode-gen/barcodeGenerator.html">Barcode generator</a></li>
+            <button class="logoutButton" onclick="backToLogin()"><h2>Log af</h2></button>
         </ul>
     </div>
 
-    <main>
+    <main id="main-size">
         <div id="box"></div>
     </main>
 
     <footer></footer>
 
-    <script>
-        function sidebar_open() {
-            document.getElementById("sidebar").style.display = "block";
-        }
-        function sidebar_close() {
-            document.getElementById("sidebar").style.display = "none";
-        }
-    </script>
+    <script src="../index.js"></script>
 </body>
 </html>

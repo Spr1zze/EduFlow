@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="kanbanStyles.css">
+
+    <!-- This is the EduFlow font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+
+    <title>EduFlow</title>
+</head>
+<body>
+    <header class="header"> <h1>EduFlow Kanban</h1>
+        <button id="open_sidebar_button" onclick="sidebar_open()">|||</button>
+    </header>
+    
+    <div id="sidebar" style="display:none;">
+        <ul> 
+            <button id="close_sidebar_button" onclick="sidebar_close()">|||</button>
+            <h4>EduFlow</h4> 
+            <h4>Links</h4>
+            <li><a href="../kanban/kanban.html">Kanban</a></li>
+            <li><a href="../inventory/lager.html">Lager</a></li>
+            <li><a href="../batch-report/batchReport.html">Reporter</a></li>
+            <h4>Admin</h4>
+            <li><a href="../student-onboarding/studentOnboarding.html">Student onboarding</a></li>
+            <li><a href="../barcode-gen/barcodeGenerator.html">Barcode generator</a></li>
+            <button class="logoutButton" onclick="backToLogin()"><h2>Log af</h2></button>
+        </ul>
+    </div>
+
+    <main class="main-size">
+        <form id="todo-form">
+            <input type="text" placeholder="ADD TODO..." id="todo-input">
+            <button type="submit">ADD +</button>
+            <button>DELETE -</button>
+        </form>
+
+        <div id="box">
+            <div class="lanes">
+                <div class="swim-lane" id="todo-daily">
+                    <h3 class="heading">TODO Daily</h3>
+    
+                    <p class="task" draggable="true">Binge GoT for free</p>
+                    <p class="task" draggable="true">Clean the kitchen</p>
+                </div>
+    
+                <div class="swim-lane" id="todo-weekly">
+                    <h3 class="heading">TODO Weekly</h3>
+    
+                    <p class="task" draggable="true">Talk to Chimmie</p>
+                    <p class="task" draggable="true">Go eat the food</p>
+                </div>
+
+                <div class="swim-lane" id="ongoing-lane">
+                    <h3 class="heading">Ongoing</h3>
+
+                    <p class="task" draggable="true">Riskiks goated</p>
+                </div>
+
+                <div class="swim-lane" id="done-lane">
+                    <h3 class="heading">Done</h3>
+
+                    <p class="task" draggable="true">Get a fagforening</div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../index.js"></script>
+    <script src="kanban-func.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Big Shoulders", sans-serif;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    background-color: white;
+    height: 0;
+}
+    
+.header{
+    background-color:rgb(147, 197, 253);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+}
+
+#sidebar{
+    position:absolute;
+    margin: 5vh 0 0 0;
+    width: 255px;  
+    top: -5%;
+    left: 0;
+    height: 100vh;
+}
+#sidebar ul{
+    list-style-type: none;
+    background-color:rgb(59, 130, 246);
+    overflow: hidden;
+    height: 100%;
+    font-size: x-large;
+    text-align: center;
+    padding: 0px;
+}
+#sidebar a{
+    text-decoration: none;
+    color: black;
+  }
+
+.logoutButton{
+    position: relative;
+    top: 35%;
+    border-radius: 7px;
+    width: 206px;
+    padding: 1px;
+    height: 38px;
+}
+.logoutButton:hover{
+    background-color: lightgray;
+}
+#logoutIcon{
+    width: 16px;
+    position:absolute;
+    left: 30%;
+}
+#sidebar li:hover{
+    background-color: white;
+    border: 2px white;
+    border-radius: 7px;
+}
+#sidebar li{
+    background-color: rgb(37, 99, 235);
+    border: 2px rgb(37, 99, 235);
+    border-radius: 7px;
+    margin: 10px;
+    padding: 3px;
+    font: bold;
+}
+
+#open_sidebar_button{
+    position: relative;
+    left: 0;
+    top: -40px;
+    width: 40px;
+    height: 40px;
+}
+#close_sidebar_button{
+    position: relative;
+    left: -98px;
+    top: 9px;
+    width: 40px;
+    height: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.main-size {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+#box{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-form {
+    padding: 0 50px 0;
+
+    position: fixed;
+    left: 385px;
+    top: 125px;
+}
+
+#todo-form input {
+    padding: 10px;
+    margin-right: 13px;
+    width: 250px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 5.5px black;
+
+    background-color: white;
+    color: black;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#todo-form button {
+    padding: 10px;
+    margin-right: 15px;
+    width: 90px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 5.5px black;
+
+    background-color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lanes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 16px;
+    padding: 25px 25px;
+}
+
+.swim-lane {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 150px;
+    width: 250px;
+    gap: 15px;
+    padding: 12px;
+
+    border-radius: 5px;
+    background-color: white;
+
+    flex-shrink: 0;
+}
+.swim-lane p {
+    margin: 0 0 5px 10px;
+}
+
+.task {
+    width: 155px;
+    padding: 12px;
+
+    border-radius: 3px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+
+    background-color: #fcfcfc;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+
+    width: 155px;
+    margin: 10px 0 5px 10px;
+}
+
+#todo-daily {
+    border: 2px solid #FFD700;
+    box-shadow: 3px 5.5px #FFD700;
+}
+#todo-weekly {
+    border: 2px solid #1E90FF;
+    box-shadow: 3px 5.5px #1E90FF;
+}
+#ongoing-lane {
+    border: 2px solid #FF8C00;
+    box-shadow: 3px 5.5px #FF8C00;
+}
+#done-lane {
+    border: 2px solid #32cd32;
+    box-shadow: 3px 5.5px #32cd32;
+}
