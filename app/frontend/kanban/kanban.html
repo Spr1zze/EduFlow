@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="kanbanStyles.css">
+    <link rel="stylesheet" href="kanban-styling.css">
 
     <!-- This is the EduFlow font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
             <h4>EduFlow</h4> 
             <h4>Links</h4>
             <li><a href="../kanban/kanban.html">Kanban</a></li>
-            <li><a href="../inventory/lager.html">Lager</a></li>
+            <li><a href="../inventory/inventory.html">Lager</a></li>
             <li><a href="../batch-report/batchReport.html">Reporter</a></li>
             <h4>Admin</h4>
             <li><a href="../student-onboarding/studentOnboarding.html">Student onboarding</a></li>
@@ -33,19 +33,21 @@
     </div>
 
     <main class="main-size">
-        <form id="todo-form">
-            <input type="text" placeholder="ADD TODO..." id="todo-input">
-            <button type="submit">ADD +</button>
-            <button>DELETE -</button>
-        </form>
-
+        <div id="form-box">
+            <form id="todo-form">
+                <input type="text" placeholder="ADD TODO..." id="todo-input">
+                <button type="button" onclick="addBtn()">ADD +</button>
+                <button type="button">DELETE -</button>
+            </form>
+        </div>
+        
         <div id="box">
             <div class="lanes">
                 <div class="swim-lane" id="todo-daily">
                     <h3 class="heading">TODO Daily</h3>
     
                     <p class="task" draggable="true">Binge GoT for free</p>
-                    <p class="task" draggable="true">Clean the kitchen</p>
+                    <p class="task" draggable="true">Clean the kitchen with all your kitchen soaps and scrubs which is needed.</p>
                 </div>
     
                 <div class="swim-lane" id="todo-weekly">
