@@ -26,6 +26,8 @@ git clone https://github.com/yourusername/eduflow.git
 cd eduflow
 npm install
 npm run dev
+````
+
 
 ## 🎮 Usage
 
