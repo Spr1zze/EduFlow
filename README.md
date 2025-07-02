@@ -1,12 +1,52 @@
-# React + Vite
+# 🚀 EduFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EduFlow is a **React-based** web app designed to make your workflow easier!  
+Focus today: inventory logging & kanban boards — with more features 🚧 coming soon.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🗂️ **Kanban board** for smooth task management  
+- 📦 **Inventory logging** system to keep track of items  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Getting Started
+
+### 🛠️ Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)  
+- npm (comes bundled with Node.js)  
+
+### 📥 Installation
+
+```bash
+git clone https://github.com/yourusername/eduflow.git
+cd eduflow
+npm install
+npm run dev
+````
+
+
+## 🎮 Usage
+
+- 🔐 See a **login screen** at start  
+- 📋 After login, **log items**, **check tasks**, and soon... **send messages!** 💬
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React + JavaScript  
+- ⚡ Vite (fast build & dev server)
+
+---
+
+## 👤 About
+
+- Developed **singlehandedly** by me, Kata
+
+---
+
+_This README will grow as EduFlow grows — stay tuned!_
