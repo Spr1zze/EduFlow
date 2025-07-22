@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container for the entire login page */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #383838;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Login box styling */
+.loginBox {
+    height: 80%;
+    width: 70%;
+    background-color: #161616;
+
+    display: flex;
+
+    border-radius: 25px;
+}
+
+
+/* Left side image styling */
+.leftSideImg {
+    height: 99.9%;
+    width: 50%;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.leftSideImg img {
+    height: 98.3%;
+    width: 100%;
+
+    margin: 0.4rem;
+
+    display: block;
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+
+/* Right side form styling */
+.rightSideCredentials {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+.rightSideCredentials p {
+    margin: 2rem;
+}
