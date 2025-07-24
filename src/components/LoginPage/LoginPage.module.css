@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+html {
+    font-size: 18px;
+}
 
 /* Container for the entire login page */
 .container {
@@ -29,7 +33,7 @@
 }
 
 
-/* Left side image styling */
+/* Left side image styling AKA image*/
 .leftSideImg {
     height: 99.9%;
     width: 50%;
@@ -54,7 +58,7 @@
 }
 
 
-/* Right side form styling */
+/* Right side form styling AKA credentials*/
 .rightSideCredentials {
     width: 50%;
 
@@ -65,6 +69,132 @@
     color: white;
 }
 
+.rightSideCredentials h2 {
+    margin: 7rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .rightSideCredentials p {
-    margin: 2rem;
+    margin: 1rem 0 2rem 0;
+    font-size: 0.9rem;
+}
+
+.rightSideCredentials form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.emailWrapper, .passwordWrapper{
+    height: 3rem;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 1.5rem 0 0 0;
+}
+
+.emailInput, .passwordInput {
+    height: 100%;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    border: none;
+    color: white;
+    background-color: #252525;
+
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+form label {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.rememberMeWrapper {
+    width: 70%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 0.7rem;
+}
+
+.rememberMeCheckbox {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+
+    background-color: black;
+    accent-color: #6b548d;
+
+    cursor: pointer;
+}
+
+.submitButton {
+    width: 70%;
+    height: 2.75rem;
+    margin-top: 5rem;
+
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    border: none;
+    color: white;
+    background-color: #6b548d;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+/* Styles for phone (small screens) */
+@media (max-width: 768px) {
+  .loginBox {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .leftSideImg,
+  .rightSideCredentials {
+    width: 100%;
+    height: auto;
+  }
+
+  .leftSideImg {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .rightSideCredentials {
+    border-radius: 0 0 25px 25px;
+    padding: 1rem;
+  }
+
+  .leftSideImg img {
+    height: auto;
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+  }
+}
+
+/* NEED TO BE FIXED /*
+/* Styles for 4k (big screens) */
+@media (min-width: 2500px) {
+    .submitButton {
+        width: 50%;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
 }

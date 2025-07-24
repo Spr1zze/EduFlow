@@ -10,6 +10,7 @@ import { TiMessages } from "react-icons/ti";
 import { RxAvatar } from "react-icons/rx";
 import { CgArrowsScrollV } from "react-icons/cg";
 
+// remember to do screen sizes media in css file
 
 
 // BasicLayout component

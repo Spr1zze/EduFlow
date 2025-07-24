@@ -18,13 +18,24 @@ export default function Login() {
                     <p>Enter your credentials to access your account</p>
 
                     <form>
-                        <label htmlFor="username">Student ID</label>
-                        <input id="username" type="text" />
+                        <div className={styles.emailWrapper}>
+                            <label htmlFor="email">Student ID</label>
+                            <input className={styles.emailInput}  type="text" />
+                        </div>
+                        
 
-                        <label htmlFor="pasword">Password</label>
-                        <input id="password" type="text" />
+                        <div className={styles.passwordWrapper}>
+                            <label htmlFor="password">Password</label>
+                            <input className={styles.passwordInput} type="password" />
+                        </div>
 
-                        <button type="submit">Login</button>
+
+                        <div className={styles.rememberMeWrapper}>
+                            <input type="checkbox" className={styles.rememberMeCheckbox} />
+                            <label htmlFor="rememberMeCheckbox">Remember Me</label>
+                        </div>
+
+                        <button type="submit" className={styles.submitButton}>Login</button>
                     </form>
                 </div>
             </div>
