@@ -35,7 +35,7 @@ export default function Login() {
                             <label htmlFor="rememberMeCheckbox">Remember Me</label>
                         </div>
 
-                        <button type="submit" className={styles.submitButton}>Login</button>
+                        <button type="submit" className={styles.submitButton}>Sign in</button>
                     </form>
                 </div>
             </div>

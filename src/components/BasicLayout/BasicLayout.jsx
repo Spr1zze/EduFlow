@@ -8,7 +8,7 @@ import { PiStudent } from "react-icons/pi";
 import { TiMessages } from "react-icons/ti";
 // Importing user icons
 import { RxAvatar } from "react-icons/rx";
-import { CgArrowsScrollV } from "react-icons/cg";
+import { RiLogoutBoxLine } from "react-icons/ri";
 
 // remember to do screen sizes media in css file
 
@@ -18,6 +18,12 @@ export default function BasicLayout() {
     return (
         <div className={styles.container}>
             <div className={styles.listContainer}>
+                <div className={styles.logoAndTitle}>
+                    <img className={styles.logoImg} src="src/assets/eduflow-logo.png" alt="Logo didn't load" />
+                    <h2>EduFlow</h2>
+                </div>
+
+
                 <ul className={styles.sidebarList}>
                     <li><MdOutlineDashboard />Dashboard</li>
                     <li><MdOutlineViewKanban />Kanban</li>
@@ -27,7 +33,7 @@ export default function BasicLayout() {
                     <li><TiMessages />Message</li>        
                 </ul>
 
-                <p className={styles.userProfile}><RxAvatar />Jakob Jensen< CgArrowsScrollV/></p>
+                <p className={styles.userProfile}><RxAvatar className={styles.avatarIcon} />Jakob Jensen<RiLogoutBoxLine className={styles.logoutIcon}/></p>
             </div>
             <div className={styles.whiteBox}></div>
         </div>

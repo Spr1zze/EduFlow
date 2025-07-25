@@ -70,7 +70,7 @@ html {
 }
 
 .rightSideCredentials h2 {
-    margin: 7rem 0 0 0;
+    margin-top: 7rem;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -161,40 +161,87 @@ form label {
 
 /* Styles for phone (small screens) */
 @media (max-width: 768px) {
-  .loginBox {
-    flex-direction: column;
-    width: 90%;
-    height: auto;
-  }
+    .loginBox {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    
+    .rightSideCredentials {
+        width: 100%;
+        height: auto;
+    }
 
-  .leftSideImg,
-  .rightSideCredentials {
-    width: 100%;
-    height: auto;
-  }
+    .leftSideImg {
+        display: none;
+    }
 
-  .leftSideImg {
-    border-radius: 25px 25px 0 0;
-  }
+    .rightSideCredentials {
+        border-radius: 0 0 25px 25px;
+        padding: 1rem;
+    }
 
-  .rightSideCredentials {
-    border-radius: 0 0 25px 25px;
-    padding: 1rem;
-  }
+    .rightSideCredentials h2 {
+        margin-top: 2rem;
+    }
 
-  .leftSideImg img {
-    height: auto;
-    margin: 0;
-    border-radius: 25px 25px 0 0;
-  }
+    .rightSideCredentials p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailWrapper, .passwordWrapper {
+        width: 80%;
+    }
+    
+    .submitButton {
+        width: 80%;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 4rem;
+    }
 }
+
 
 /* NEED TO BE FIXED /*
 /* Styles for 4k (big screens) */
 @media (min-width: 2500px) {
+    .rightSideCredentials h2 {
+        font-size: 4rem;
+        margin-top: 10rem;
+    }
+
+    .rightSideCredentials p {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .emailWrapper, .passwordWrapper {
+        width: 70%;
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .emailInput, .passwordInput {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    form label {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .rememberMeCheckbox {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
     .submitButton {
-        width: 50%;
+        width: 70%;
         height: 3.5rem;
         font-size: 1.5rem;
+        margin-top: 10rem;
     }
 }

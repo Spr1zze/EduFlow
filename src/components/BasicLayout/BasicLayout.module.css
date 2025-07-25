@@ -18,10 +18,26 @@
 /* Sidebar styling. Purely for navigation */
 .listContainer {
     height: 100%;
-    width: 17%;
+    width: 18.5%;
 
     display: flex;
     flex-direction: column;
+}
+
+.logoAndTitle {
+    display: flex;
+    align-items: center;
+
+}
+.logoAndTitle h2{
+    color: #6b548d;
+    font-size: 2rem;
+}
+
+.logoImg {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
 }
 
 .sidebarList {
@@ -62,15 +78,23 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    justify-items: center;
 }
 
-.userProfile svg {
-    width: 40px;
-    height: 40px;
+.userProfile .avatarIcon {
+    width: 2rem;
+    height: 2rem;
 
     margin-right: 1.5rem;
 }
 
+.userProfile .logoutIcon {
+    width: 2rem;
+    height: 2rem;
+
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
 
 /* Whitebox styling. The entire main part of the page */
 .whiteBox {

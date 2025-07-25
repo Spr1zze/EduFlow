@@ -18,7 +18,7 @@ import BasicLayout from './components/BasicLayout/BasicLayout.jsx';
 export default function App() {
     return (
         <>
-            <Login />
+            <BasicLayout />
         </>
     )
 }
