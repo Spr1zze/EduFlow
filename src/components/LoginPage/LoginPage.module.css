@@ -137,8 +137,15 @@ form label {
     cursor: pointer;
 }
 
-.submitButton {
+.submitButtonWrapper {
     width: 70%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.submitButton {
+    width: 100%;
     height: 2.75rem;
     margin-top: 5rem;
 
@@ -146,6 +153,7 @@ form label {
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     border: none;
     color: white;
+
     background-color: #6b548d;
 
     cursor: pointer;
@@ -204,7 +212,6 @@ form label {
 }
 
 
-/* NEED TO BE FIXED /*
 /* Styles for 4k (big screens) */
 @media (min-width: 2500px) {
     .rightSideCredentials h2 {

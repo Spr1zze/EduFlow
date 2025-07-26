@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './LoginPage.module.css';
+import { Link } from 'react-router-dom';
+
 
 // Importing images for login page
 import loginImg from '../../assets/loginCredentialsImg.png';
 
 
-export default function Login() {
+const Login = () => {
     return (
         <div className={styles.container}>
             <div className={styles.loginBox}>
@@ -35,10 +37,14 @@ export default function Login() {
                             <label htmlFor="rememberMeCheckbox">Remember Me</label>
                         </div>
 
-                        <button type="submit" className={styles.submitButton}>Sign in</button>
+                        <Link to="/dashboard" className={styles.submitButtonWrapper}>
+                            <button type="submit" className={styles.submitButton}>Sign in</button>
+                        </Link>
                     </form>
                 </div>
             </div>
         </div>
     );
 }
+
+export default Login;

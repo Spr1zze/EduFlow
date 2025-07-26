@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './BasicLayout.module.css';
+import { Outlet } from 'react-router-dom';
+
+// Makes it so teh navbar is clickable
+import { Link } from 'react-router-dom';
 
 // Importing icons for nav bar 
 import { MdOutlineViewKanban, MdOutlineDashboard, MdOutlineInventory2 } from "react-icons/md";
@@ -14,7 +18,7 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 
 
 // BasicLayout component
-export default function BasicLayout() {
+const BasicLayout = () => {
     return (
         <div className={styles.container}>
             <div className={styles.listContainer}>
@@ -25,17 +29,21 @@ export default function BasicLayout() {
 
 
                 <ul className={styles.sidebarList}>
-                    <li><MdOutlineDashboard />Dashboard</li>
-                    <li><MdOutlineViewKanban />Kanban</li>
-                    <li><TbReport />Batch Report</li>
-                    <li><PiStudent />Student</li>
-                    <li><MdOutlineInventory2 />Inventory</li>
-                    <li><TiMessages />Message</li>        
+                    <li><Link to="/dashboard"><MdOutlineDashboard />Dashboard</Link></li>
+                    <li><Link to="/kanban"><MdOutlineViewKanban />Kanban</Link></li>
+                    <li><Link to="/inventory"><MdOutlineInventory2 />Inventory</Link></li>
+                    <li><Link to="/ComingSoon"><TbReport />Batch Report</Link></li>
+                    <li><Link to="/ComingSoon"><PiStudent />Student</Link></li>
+                    <li><Link to="/ComingSoon"><TiMessages />Message</Link></li>        
                 </ul>
 
-                <p className={styles.userProfile}><RxAvatar className={styles.avatarIcon} />Jakob Jensen<RiLogoutBoxLine className={styles.logoutIcon}/></p>
+                <p className={styles.userProfile}><RxAvatar className={styles.avatarIcon} />Jakob Jensen<Link to="/"><RiLogoutBoxLine className={styles.logoutIcon}/></Link></p>
             </div>
-            <div className={styles.whiteBox}></div>
+            <div className={styles.whiteBox}>
+                <Outlet />
+            </div>
         </div>
     )
 }
+
+export default BasicLayout;
