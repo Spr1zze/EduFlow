@@ -4,7 +4,6 @@ import React from 'react';
 import Login from './components/LoginPage/Login.jsx';
 
 // import these when needed 
-/*
 import Dashboard from './components/DashboardPage/Dashboard.jsx';
 import Kanban from 'src/components/KanbanPage/Kanban.jsx';
 import Inventory from 'src/components/KanbanPage/Kanban.jsx';
