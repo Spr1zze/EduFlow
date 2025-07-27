@@ -41,20 +41,21 @@
 }
 
 /* Sidebar list styling */
-.sidebarList {
-    line-height: 5rem;
-    margin-top: 2rem;
-}
-
 .sidebarList li {
     list-style: none;
     padding-left: 1.5rem;
     font-size: 1.25rem;
 
+    margin-top: 1.5rem;
+
     display: flex;
     align-items: center;
 
     cursor: pointer;
+}
+
+.sidebarList li:first-child {
+    margin-top: 2.5rem;
 }
 
 .sidebarList li svg {
