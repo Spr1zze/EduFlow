@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './BasicLayout.module.css';
 import { Outlet } from 'react-router-dom';
 
-// Makes it so teh navbar is clickable
+// Makes it so the navbar is clickable
 import { Link } from 'react-router-dom';
 
 // Importing icons for nav bar 

@@ -11,16 +11,69 @@
 
     border-radius: 50px;
 
-    background-color: #686868;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #E0E0E0;
 }
 
-h1{
-    font-size: 2.5rem;
+.title{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.6rem;
     color: black;
-    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Open chart eye icon button */
+.openEyeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    background-color: transparent;
+    color: black;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: 1.2rem;
+}
+
+.openEyeButton svg {
+    height: 2rem;
+    width: 2rem;
+}
+.openEyeButton:hover {
+    color: #6b548d;
+}
+
+
+/* Inventory wrapper */
+.inventoryWrapper {
+    width: 100%;
+    height: 93.5%;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E0E0E0;
+}
+
+.inventoryChart {
+    width: 95%;
+    height: 95%;
+
+    border-radius: 15px;
+
+    background-color: black;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
