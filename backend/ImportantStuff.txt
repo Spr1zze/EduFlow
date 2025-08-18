@@ -1,0 +1,8 @@
+Database Credentials
+Username: postgres
+Password: adminpassword
+
+
+Entity Framework Core install commands
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL

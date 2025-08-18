@@ -211,6 +211,28 @@ form label {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1420px) {
+    .container {
+        background-color: red ! important;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+    .rightSideCredentials h2 {
+        margin-top: 4rem;
+    }
+
+    .emailWrapper, .passwordWrapper {
+        margin-top: 1rem;
+        height: 3.3rem;
+    }
+
+    .submitButton {
+        margin-top: 3rem;
+    }
+}
+
+
 
 /* Styles for 4k (big screens) */
 @media (min-width: 2500px) {

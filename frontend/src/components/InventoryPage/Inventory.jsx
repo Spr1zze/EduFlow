@@ -16,7 +16,7 @@ function Inventory() {
 
             <div className={Styles.inventoryWrapper}>
                 <div className={Styles.inventoryChart}>
-                    <h1>inventory finna be golden</h1>
+                    <h1>This will be inventory stock</h1>
                 </div>
             </div>
         </div>
