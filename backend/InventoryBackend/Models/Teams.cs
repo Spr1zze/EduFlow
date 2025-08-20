@@ -4,6 +4,7 @@ namespace InventoryBackend.Models
 {
     public class Teams
     {
+        [Key]
         public int TeamId { get; set; }
 
         [Required]

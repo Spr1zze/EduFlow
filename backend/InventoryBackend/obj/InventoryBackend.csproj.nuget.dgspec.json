@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\InventoryBackend\\InventoryBackend.csproj": {}
+    "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\InventoryBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\InventoryBackend\\InventoryBackend.csproj": {
+    "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\InventoryBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\InventoryBackend\\InventoryBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\InventoryBackend.csproj",
         "projectName": "InventoryBackend",
-        "projectPath": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\InventoryBackend\\InventoryBackend.csproj",
+        "projectPath": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\InventoryBackend.csproj",
         "packagesPath": "C:\\Users\\Siedl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\InventoryBackend\\obj\\",
+        "outputPath": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,6 +55,12 @@
               "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
             },
