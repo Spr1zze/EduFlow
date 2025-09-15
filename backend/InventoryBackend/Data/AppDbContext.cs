@@ -17,3 +17,6 @@ namespace InventoryBackend.Data
         public DbSet<Credentials> Credentials { get; set; }
     }
 }
+
+
+

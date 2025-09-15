@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pRWHu3/wM18=",
+  "dgSpecHash": "EvIGC20sZL0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Siedl\\Programming\\Projects\\VS Code Projects\\EduFlow\\backend\\inventorybackend\\InventoryBackend.csproj",
+  "projectFilePath": "C:\\Users\\Siedl\\Programming\\Projects\\VSC-Projects\\EduFlow\\backend\\InventoryBackend\\InventoryBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Siedl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Siedl\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
